@@ -5,9 +5,35 @@
   padding: 0px;
 }
 
-
-  h1 {
-    font-size: 5em;
-    padding: 5px 5px 5px 5px;
+body, html {
+  min-height: 100vh;
+  background-image: linear-gradient(to left, #232CD9, #366CD9);
   
-  }
+}
+
+main > h1{
+  color: #D9AB23;
+  font-size: 5em;
+  padding-top: 25px;
+  padding-left: 10px;
+  text-shadow: 2px 5px 3px black;
+}
+main > h2 {
+  color: #D9AB23;
+  font-size: 2em;
+  padding-left: 50px;
+  padding-top: 20px;
+  border: 10px solid white;
+  border-width: 20px ;
+  
+ 
+  
+  
+}
+main > h2 > img {
+  font-size: 1px;
+}
+
+h2.con {
+  padding-left: 500px;
+}
