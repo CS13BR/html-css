@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+      width: 500px;
+      border-collapse: collapse;
+      position: relative;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    caption {
+      padding: 10px;
+      font-size: 1.5em;
+      background-color: rgba(128, 128, 128, 0.582);
+    }
+    thead, tfoot {
+      color: white;
+        background-color: rgb(32, 32, 32);
+        
+    }
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: rgb(32, 32, 32);
+    }
+
+    tbody > tr:nth-child(2n) {
+      background-color: lightgray;
+    }
+    .num {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>uso de tabelas grandes</h1>
+  <!--
+    anatomia para tabelas grandes
+    table
+      caption
+      thead
+        TR, TD, TH
+      Tbody
+        TR, TD, TH
+      Tfoot
+        TR, TD, TH    
+
+  -->
+  <table>
+    <caption>População Das unidades federativas</caption>
+    <thead>
+      <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px;">População</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>São Paulo</td>
+        <td class="num">45 919 049</td>
+      </tr>
+      <tr>
+        <td>Minas Gerais</td>
+        <td class="num">20 538 718</td>
+      </tr>
+      <tr>
+        <td> Rio de Janeiro</td>
+        <td class="num">16 054 524</td>
+      </tr>
+      <tr>
+        <td>Bahia</td>
+        <td class="num">14 136 417</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <th scope="row">Total de Habitantes</th>
+      <td>000000000</td>
+    </tfoot>
+  </table>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus asperiores doloremque cum, architecto molestias ullam. Nisi, modi illo vero fugit, eius voluptatibus quibusdam quo nemo at quas corporis, eos omnis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio facilis esse illum rem similique suscipit deserunt exercitationem beatae, nisi itaque. Quaerat consequuntur, sint dicta autem corporis a odit beatae! Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit quas magnam ab nisi atque ut neque, maxime possimus id ex consectetur. Non tempora, autem doloribus necessitatibus nesciunt vel esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam velit voluptatibus, necessitatibus quas nisi, dolore omnis aperiam quasi aliquam consequatur pariatur fugiat eius nobis aut magnam! Magnam earum illo mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem obcaecati error vitae voluptates ipsa eos nesciunt dolor alias voluptatum earum. Repellat nostrum illo esse tenetur omnis aspernatur et possimus voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, qui sunt iste laudantium quaerat dolore minima voluptatibus laborum aliquid ullam doloribus recusandae totam assumenda consequatur sed, veritatis inventore explicabo? Esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aperiam ad nostrum ratione nisi repudiandae asperiores necessitatibus odit corporis velit praesentium eligendi, quaerat animi consectetur ab. Neque enim vitae unde? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum harum, fugiat doloremque quaerat cumque voluptate sunt, sapiente aliquid explicabo quis molestias quisquam! Veritatis sequi saepe vel repudiandae, debitis eveniet dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium harum dolorem accusamus, velit error sapiente cum illum delectus eum explicabo nisi, quaerat architecto dolorum quisquam repellat pariatur. Laudantium, blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero harum qui impedit nemo eius atque quasi? Temporibus quae pariatur ratione nemo quia asperiores. Illum distinctio tempora laboriosam error atque quisquam.</p>
+</body>
+</html>
