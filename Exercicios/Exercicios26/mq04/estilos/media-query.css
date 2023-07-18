@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media print {
+  
+}
+
+@media screen and (min-width: 768) and (max-width: 992) {
+
+  body {
+    background: url(../imagens/back-tablet.jpg);
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 992) and (max-width: 1200) {
+
+    body {
+      background: url(../imagens/back-pc.jpg);
+    }
+}
+
+@media screen and (min-width: 1200) {
+    
+  body {
+    background: url(../imagens/back-tv.jpg);
+  }
+}
