@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media query</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body onresize="mudouTamanho ()">
+  <header>
+      <h1>Meu site</h1>
+      <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+          <li><a href="#">Opção 3</a></li>
+          <li><a href="#">Opção 4</a></li>
+        </ul>
+      </menu>
+  </header>
+  <main>
+    <article>
+      <h2>Testando Media Queries</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis dolore explicabo provident dicta magni aut, quisquam enim! Magnam mollitia totam laboriosam, quaerat inventore pariatur error eos eius amet asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tenetur dolores architecto aliquid molestiae alias, facilis, repellendus ratione, quam quo excepturi eaque laborum. Labore amet fuga magnam repellendus nobis omnis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates consectetur ad officiis accusamus, necessitatibus omnis est fugit quas velit consequatur! Cupiditate itaque ad dolorem, ut repellat corporis rem expedita alias.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto labore quam veniam? Repellendus mollitia blanditiis commodi, perspiciatis, perferendis hic provident architecto nemo cupiditate excepturi magnam accusamus nobis atque rerum officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor numquam illum unde, alias necessitatibus porro eaque at? Quaerat voluptatibus consectetur magni nam cumque, dolore blanditiis quasi dolor dolorem ducimus?</p>
+    </article>
+  </main>
+
+  <script>
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = 'block'
+        } else {
+          itens.style.display = 'none'
+        }
+    }
+
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+          itens.style.display = 'none'
+        } else {
+          itens.style.display = 'block'
+        }
+    }
+
+  </script>
+</body>
+</html>
