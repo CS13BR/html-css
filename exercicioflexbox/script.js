@@ -107,11 +107,11 @@ const flappyBird = {
     altura: 24,
     x: 10,
     y: 50,
-    pulo: 4.67,
+    pulo: 3.5,
     pula() {
         flappyBird.velocidade = - flappyBird.pulo;
     },
-    gravidade: 0.25,
+    gravidade: 0.15,
     velocidade: 0,
     atualiza() {
         if(fazColisao(flappyBird, globais.chao)) {
@@ -325,7 +325,7 @@ function criaPlacar() {
         },
 
         atualiza() {
-            const intervaloDeFrames = 60;
+            const intervaloDeFrames = 140;
             const passouOIntervalo = frames % intervaloDeFrames === 0;
 
             if(passouOIntervalo) {
