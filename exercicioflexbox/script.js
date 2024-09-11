@@ -119,7 +119,7 @@ const flappyBird = {
             setTimeout(() => {
 
             }, 500);
-            mudaParaTela(Telas.INICIO);
+            mudaParaTela(Telas.GAME_OVER);
              
         return;    
         }
@@ -297,7 +297,7 @@ function criaCanos() {
             canos.pares.forEach(function(par){
                 par.x = par.x - 2;
                 if(canos.temColisaoComOFlappyBird(par)) {
-                    som_HIT.play();
+                    dano.play();
                     mudaParaTela(Telas.GAME_OVER);
                 }
 
