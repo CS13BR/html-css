@@ -107,11 +107,11 @@ const flappyBird = {
     altura: 24,
     x: 10,
     y: 50,
-    pulo: 2.2,
+    pulo: 1.0,
     pula() {
         flappyBird.velocidade = - flappyBird.pulo;
     },
-    gravidade: 0.1,
+    gravidade: 0.01,
     velocidade: 0,
     atualiza() {
         if(fazColisao(flappyBird, globais.chao)) {
