@@ -6,6 +6,10 @@ sprites.src = 'sprites2.png';
 const dano = new Audio();
 dano.src = `hit.wav`;
 
+const pulo = new Audio();
+
+pulo.src = 'pulo.wav';
+
 let frames = 0;
 
 const canvas = document.querySelector('canvas');
@@ -114,7 +118,7 @@ const flappyBird = {
     gravidade: 0.25,
     velocidade: 0,
     atualiza() {
-        if(fazColisao(flappyBird, globais.chao)) {
+        if(fazColisao(flappyBird, globais.chao, pulo.play())) {
             dano.play();
             setTimeout(() => {
 
@@ -427,6 +431,7 @@ function loop() {
 window.addEventListener(`click`, function() {
     if(telaAtiva.click) {
         telaAtiva.click();
+
     }
 })
 
